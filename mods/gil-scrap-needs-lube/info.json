@@ -1,0 +1,12 @@
+{
+    "name": "gil-scrap-needs-lube",
+    "version": "0.1.0",
+    "title": "Gil's Lubricated Scrap Mining",
+    "author": "Gilberry",
+    "contact": "",
+    "homepage": "",
+    "description": "Fulgoran scrap now requires lube to mine.",
+    "factorio_version": "2.0",
+    "space_travel_required": true,
+    "dependencies": ["base >= 2.0.72", "space-age"]
+}
