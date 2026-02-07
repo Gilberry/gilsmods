@@ -50,17 +50,17 @@ for mod_folder in mods_dir.iterdir():
     if zip_path.exists():
         zip_path.unlink()
 
-    # Create ZIP
+    # Create ZIP with inner folder <mod-name>_<version>
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
         for root, _, files in os.walk(mod_folder):
             for file in files:
                 file_path = Path(root) / file
-                # Preserve folder structure relative to mod folder
-                zipf.write(file_path, file_path.relative_to(mod_folder))
+                relative_path = Path(f"{mod_name}_{version}") / file_path.relative_to(mod_folder)
+                zipf.write(file_path, relative_path)
 
     print(f"Built {zip_name}")
 
 if single_mod:
-    print(f"Finished building single mod: {single_mod}")
+    print(f"Finished building mod: {single_mod}")
 else:
     print("Finished building all mods")
