@@ -3,17 +3,26 @@ import json
 import zipfile
 import sys
 from pathlib import Path
+import shutil
 
 # Paths
 repo_root = Path(__file__).parent
+factorio_mods_dir = (repo_root.parent / "mods").resolve()
 mods_dir = repo_root / "mods"
 dist_dir = repo_root / "dist"
+
+# Deploy to Factorio mods folder
+deploy = "--deploy" in sys.argv or "-d" in sys.argv
 
 # Ensure dist exists
 dist_dir.mkdir(exist_ok=True)
 
-# Check if a mod name was passed as argument
-single_mod = sys.argv[1] if len(sys.argv) > 1 else None
+# Check if a mod name was passed as argument, ignoring deploy flags
+single_mod = None
+for arg in sys.argv[1:]:
+    if arg not in ("--deploy", "-d"):
+        single_mod = arg
+        break
 
 # Loop through each mod folder
 for mod_folder in mods_dir.iterdir():
@@ -59,6 +68,14 @@ for mod_folder in mods_dir.iterdir():
                 zipf.write(file_path, relative_path)
 
     print(f"Built {zip_name}")
+
+    if deploy:
+        deploy_path = factorio_mods_dir / zip_name
+        if deploy_path.exists():
+            deploy_path.unlink()
+        shutil.copy2(zip_path, deploy_path)
+        print(f"Deployed {zip_name} to Factorio/mods/")
+
 
 if single_mod:
     print(f"Finished building mod: {single_mod}")
