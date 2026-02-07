@@ -1,12 +1,12 @@
 {
-    "name": "mod-template",
+    "name": "gil-rocket-parts",
     "version": "0.1.0",
-    "title": "Mod Template",
+    "title": "Gil's Rocket Parts",
     "author": "Gilberry",
     "contact": "",
-    "homepage": "",
-    "description": "A template for a mod",
+    "homepage": "https://github.com/Gilberry/gilsmods",
+    "description": "A small mod that forces rocket part manufacturing to happen outside the rocket silo to enable easier shipping of processing units, low density structures and rocket fuel.",
     "factorio_version": "2.0",
-    "space_travel_required": false,
+    "space_travel_required": true,
     "dependencies": ["base >= 2.0.72"]
 }
