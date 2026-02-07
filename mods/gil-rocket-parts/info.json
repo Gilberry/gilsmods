@@ -1,0 +1,12 @@
+{
+    "name": "mod-template",
+    "version": "0.1.0",
+    "title": "Mod Template",
+    "author": "Gilberry",
+    "contact": "",
+    "homepage": "",
+    "description": "A template for a mod",
+    "factorio_version": "2.0",
+    "space_travel_required": false,
+    "dependencies": ["base >= 2.0.72"]
+}

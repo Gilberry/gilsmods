@@ -1,0 +1,17 @@
+# Factorio runtime & generated files
+*.log
+*.tmp
+*.zip
+script-output/
+tmp/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Factorio
+mod-list.json
+player-data.json
