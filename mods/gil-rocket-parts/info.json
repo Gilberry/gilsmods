@@ -8,5 +8,5 @@
     "description": "A small mod that forces rocket part manufacturing to happen outside the rocket silo to enable easier shipping of processing units, low density structures and rocket fuel.",
     "factorio_version": "2.0",
     "space_travel_required": true,
-    "dependencies": ["base >= 2.0.72"]
+    "dependencies": ["base >= 2.0.72", "space-age"]
 }
