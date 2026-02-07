@@ -2,8 +2,7 @@
 *.log
 *.tmp
 *.zip
-script-output/
-tmp/
+dist/
 
 # VS Code
 .vscode/
