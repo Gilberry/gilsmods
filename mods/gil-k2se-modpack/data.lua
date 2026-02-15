@@ -1,0 +1,7 @@
+require("prototypes.item-groups.aai-transportation")
+require("prototypes.item-groups.deep-science")
+require("prototypes.item-groups.equipment")
+require("prototypes.item-groups.item-storage")
+require("prototypes.item-groups.misc-processing")
+require("prototypes.item-groups.modules")
+require("prototypes.item-groups.planetary-science")
