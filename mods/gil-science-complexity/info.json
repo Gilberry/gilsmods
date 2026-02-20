@@ -1,0 +1,12 @@
+{
+    "name": "gil-science-complexity",
+    "version": "0.1.0",
+    "title": "Gil's Complex Science Logistics",
+    "author": "Gilberry",
+    "contact": "",
+    "homepage": "",
+    "description": "Adds additional challenges to Space Age science transportation.",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0", "space-age"],
+    "space_travel_required": true
+}

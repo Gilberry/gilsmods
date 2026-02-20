@@ -1,0 +1,3 @@
+table.insert(data.raw["technology"]["electromagnetic-science-pack"].effects, {type="unlock-recipe", recipe="precursor-electromagnetic-science-pack"})
+table.insert(data.raw["technology"]["cryogenic-science-pack"].effects, {type="unlock-recipe", recipe="cryogenic-science-pack-cooling"})
+table.insert(data.raw["technology"]["cryogenic-science-pack"].effects, {type="unlock-recipe", recipe="hot-cryogenic-science-pack-cooling"})
