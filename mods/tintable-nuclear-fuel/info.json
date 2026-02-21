@@ -5,7 +5,7 @@
     "author": "Gilberry",
     "contact": "",
     "homepage": "https://github.com/Gilberry/gilsmods",
-    "description": "Allows centrifuge tinting for GotLags nuclear fuel mod",
+    "description": "Allows centrifuge tinting for GotLags nuclear fuel mod.",
     "factorio_version": "2.0",
     "space_travel_required": false,
     "dependencies": ["base >= 2.0", "Nuclear Fuel", "tintable-centrifuges"]
