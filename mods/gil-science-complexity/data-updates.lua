@@ -26,7 +26,8 @@ data.raw.recipe["electromagnetic-science-pack"].order = "j-b"
 data.raw.tool["electromagnetic-science-pack"].order = "j-b"
 data.raw.recipe["electromagnetic-science-pack"].maximum_productivity = 0
 data.raw.recipe["electromagnetic-science-pack"].surface_conditions = {
-    {property = "pressure", min = 0, max = 10}
+    {property = "pressure", min = 0, max = 10},
+    {property = "gravity", min = 0, max = 0}
 }
 data.raw.recipe["electromagnetic-science-pack"].allowed_module_categories = {
     "speed",
